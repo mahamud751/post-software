@@ -1109,57 +1109,40 @@
                   <!-- /.card-header -->
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-md-3">
-                        <select class="form-control select2">
-                          <option selected="selected">Select a Product </option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
-                      </div>
-                      <div class="col-md-3">
-                        <input type="text" class="form-control" id="product-code" placeholder="Enter Product Code" name="product-code">
-                      </div>
-                      <div class="col-md-3">
-                        <input type="text" class="form-control" id="product-name" placeholder="Enter Product Name" name="product-name">
-                      </div>
-                
-                      <div class="col-md-3">
-                     <div class="row">
                       <div class="col-md-6">
+                        <label for="supplier">Supplier</label>
                         <select class="form-control select2">
-                          <option selected="selected">Select a Category</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
-                        </div>
-                      <div class="col-md-6">
-                        <select class="form-control select2">
-                          <option selected="selected">Select a Brand</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
-                        </div>
-                  
-                     </div>
+                            <option selected="selected">Select Supplier</option>
+                            <option>Alaska</option>
+                            <option>California</option>
+                            <option>Delaware</option>
+                            <option>Tennessee</option>
+                            <option>Texas</option>
+                            <option>Washington</option>
+                          </select>
                       </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="supplier">Purchase Date</label>
+                            <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                             
+                                  <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate">
+                                  <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                                      <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                  </div>
+                              </div>
+                          </div>
+                     
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Product</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Product Name" name="product_name">
+                          </div>
+                      </div>
+                 
                     </div>
-                    <div class="mt-5" style="display: flex;">
-                      <button type="button" class="btn-info" style="margin-right: 10px;width: 120px;">Filter</button>
-                      <button type="button" class="btn-info" style="margin-right: 10px;width: 120px;">Reset</button>
-               
-                    </div>
+              
                   </div>
                   <!-- /.card-body -->
                 </div>
@@ -1171,9 +1154,7 @@
               <!-- /.col -->
             </div>
             <div class="row">
-              
               <div class="col-12">
-                
                 <div class="card">
                   <div class="card-header">
                     <h3 class="card-title">Products</h3>
@@ -1183,373 +1164,41 @@
                   <div class="card-body">
                     <table id="example2" class="table table-bordered table-hover">
                       <thead>
-                        <tr class="bg-primary">
-                             <th>#</th>
-                             <th>Image</th>
-                             <th>Product</th>
-                             <th>Category</th>
-                             <th>Price</th>
-                             <th>Sells</th>
-                             <th>Purchases</th>
-                             <th>Available Stock</th>
-                             <th>Sell Value</th>
+                        <tr>
+                          <th>SL</th>
+                          <th>Product</th>
+                          <th>Rate</th>
+                          <th>Qty</th>
+                          <th>Sub Total</th>
+                     
+                          <th>Action</th>
+                       
                         </tr>
-                   </thead>
-                   <tbody>
-                    <tr>
-<th scope="row">1</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image" data-pagespeed-url-hash="31082695" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">Mobile Phone - 000001</a>
-</td>
-<td>
-Hardware
-</td>
-<td>
-4500.00 Tk
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0 Tk
-</td>
-</tr>
-                    <tr>
-<th scope="row">2</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image" data-pagespeed-url-hash="31082695" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">laptop Comouter - 000002</a>
-</td>
-<td>
-Fashion
-</td>
-<td>
-78000.00 Tk
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0 Tk
-</td>
-</tr>
-                    <tr>
-<th scope="row">3</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image" data-pagespeed-url-hash="31082695" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">Desktop Computer - 000003</a>
-</td>
-<td>
-Document
-</td>
-<td>
-458.00 Tk
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0 Tk
-</td>
-</tr>
-                    <tr>
-<th scope="row">4</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image" data-pagespeed-url-hash="31082695" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">T Shirt - 000004</a>
-</td>
-<td>
-Fashion
-</td>
-<td>
-1500.00 Tk
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0 Tk
-</td>
-</tr>
-                    <tr>
-<th scope="row">5</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image" data-pagespeed-url-hash="31082695" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">Ladis Shirt - 000005</a>
-</td>
-<td>
-House
-</td>
-<td>
-900.00 Tk
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0 Tk
-</td>
-</tr>
-                    <tr>
-<th scope="row">6</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image" data-pagespeed-url-hash="31082695" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">Freez - 000006</a>
-</td>
-<td>
-Document
-</td>
-<td>
-4500.00 Tk
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0 Tk
-</td>
-</tr>
-                    <tr>
-<th scope="row">7</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image" data-pagespeed-url-hash="31082695" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">Air Condition - 000007</a>
-</td>
-<td>
-Document
-</td>
-<td>
-96000.00 Tk
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0 Tk
-</td>
-</tr>
-                    <tr>
-<th scope="row">8</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image" data-pagespeed-url-hash="31082695" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">Door Export - 000008</a>
-</td>
-<td>
-Electronics
-</td>
-<td>
-15000.00 Tk
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0 Tk
-</td>
-</tr>
-                    <tr>
-<th scope="row">9</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image" data-pagespeed-url-hash="31082695" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">Blajer For Men - 000009</a>
-</td>
-<td>
-Fashion
-</td>
-<td>
-3000.00 Tk
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0 Tk
-</td>
-</tr>
-                    <tr>
-<th scope="row">10</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image" data-pagespeed-url-hash="31082695" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">Dril Machine - 000010</a>
-</td>
-<td>
-Fashion
-</td>
-<td>
-3000.00 Tk
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0 Tk
-</td>
-</tr>
-                    <tr>
-<th scope="row">11</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image" data-pagespeed-url-hash="31082695" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">Gaming Laptop - 000011</a>
-</td>
-<td>
-Hardware
-</td>
-<td>
-150000.00 Tk
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0 Tk
-</td>
-</tr>
-                    <tr>
-<th scope="row">12</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/products/1655613624.png" width="40" alt="Image" data-pagespeed-url-hash="1197214668" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">Laptop A4252 - 12544</a>
-</td>
-<td>
-Electronics
-</td>
-<td>
-20000.00 Tk
-</td>
-<td>
-16
-</td>
-<td>
-22
-</td>
-<td>
-6
-</td>
-<td>
-120000 Tk
-</td>
-</tr>
-                    <tr>
-<th scope="row">13</th>
-<td style="padding:5px" class="text-center">
-<img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image" data-pagespeed-url-hash="31082695" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-</td>
-<td>
-<a href="#">Polo Shirt - 12345671</a>
-</td>
-<td>
-Fashion
-</td>
-<td>
-500.00 Tk
-</td>
-<td>
-0
-</td>
-<td>
-10
-</td>
-<td>
-10
-</td>
-<td>
-5000 Tk
-</td>
-</tr>
-               </tbody>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Napa</td>
+                          <td>Fever</td>
+                          <td>Medicine</td>
+                          <td>Novo</td>
+                          <td>7</td>       
+                      
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
                   
-                
+                          <th></th>
+                          <th></th>
+                          <th></th>
+                          <th></th>
+               
+                          <th>Total</th>
+                          <th>1200</th>
+                        </tr>
+                      </tfoot>
+                  
                     </table>
                   </div>
                   <!-- /.card-body -->

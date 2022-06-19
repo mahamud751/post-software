@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AdminLTE 3 | General Form Elements</title>
+    <title>AdminLTE 3 | DataTables</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
@@ -39,7 +39,7 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
-            <a href="index3.html" class="nav-link">Home</a>
+            <a href="../../index3.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
             <a href="#" class="nav-link">Contact</a>
@@ -80,7 +80,7 @@
               <a href="#" class="dropdown-item">
                 <!-- Message Start -->
                 <div class="media">
-                  <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" />
+                  <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" />
                   <div class="media-body">
                     <h3 class="dropdown-item-title">
                       Brad Diesel
@@ -96,7 +96,7 @@
               <a href="#" class="dropdown-item">
                 <!-- Message Start -->
                 <div class="media">
-                  <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                  <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
                   <div class="media-body">
                     <h3 class="dropdown-item-title">
                       John Pierce
@@ -112,7 +112,7 @@
               <a href="#" class="dropdown-item">
                 <!-- Message Start -->
                 <div class="media">
-                  <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                  <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
                   <div class="media-body">
                     <h3 class="dropdown-item-title">
                       Nora Silvester
@@ -161,7 +161,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
               <i class="fas fa-th-large"></i>
             </a>
           </li>
@@ -315,7 +315,7 @@
                   <li class="nav-item">
                     <a href="categoryList.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Category List</p>
+                      <p>Products List</p>
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1084,12 +1084,12 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>General Form</h1>
+                <h1>DataTables</h1>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active">General Form</li>
+                  <li class="breadcrumb-item active">DataTables</li>
                 </ol>
               </div>
             </div>
@@ -1100,145 +1100,176 @@
         <!-- Main content -->
         <section class="content">
           <div class="container-fluid">
+        
             <div class="row">
-              <!-- left column -->
-
-              <div class="col-md-12">
-                <div class="card card-info">
-                  <div class="card-header">
-                    <h3 class="card-title">Add Customer</h3>
-                  </div>
+              <div class="col-12">
+                <div class="card">
+                
+            
                   <!-- /.card-header -->
-                  <!-- form start -->
-                  <form class="form-horizontal">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Customer Name</label>
-                            <div class="col-sm-6">
-                              <input type="text" class="form-control" id="inputEmail3" placeholder="Customer Name" />
-                            </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <input type="text" class="form-control" id="product-code" placeholder="Enter Product Code" name="product-code">
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate">
+                              <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                              </div>
                           </div>
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email Address1</label>
-                            <div class="col-sm-6">
-                              <input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
-                            </div>
+                      </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate">
+                              <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                              </div>
                           </div>
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Phone</label>
-                            <div class="col-sm-6">
-                              <input type="number" class="form-control" id="inputEmail3" placeholder="Phone" />
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Address 1 </label>
-                            <div class="col-sm-6">
-                              <input type="text" class="form-control" id="inputEmail3" placeholder="Address 1 " />
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Fax</label>
-                            <div class="col-sm-6">
-                              <input type="text" class="form-control" id="inputEmail3" placeholder="Fax" />
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">State</label>
-                            <div class="form-group col-sm-6">
-                            
-                              <select class="form-control select2" style="width: 100%">
-                                <option selected="selected">State</option>
-                                <option>Alaska</option>
-                                <option>California</option>
-                                <option>Delaware</option>
-                                <option>Tennessee</option>
-                                <option>Texas</option>
-                                <option>Washington</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Country</label>
-                            <div class="col-sm-6">
-                              <input type="text" class="form-control" id="inputEmail3" placeholder="Country" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Mobile No</label>
-                            <div class="col-sm-6">
-                              <input type="number" class="form-control" id="inputEmail3" placeholder="Mobile No" />
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email Address2</label>
-                            <div class="col-sm-6">
-                              <input type="email" class="form-control" id="inputEmail3" placeholder="Email Address " />
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Contract</label>
-                            <div class="col-sm-6">
-                              <input type="number" class="form-control" id="inputEmail3" placeholder="Contract" />
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Address 2 </label>
-                            <div class="col-sm-6">
-                              <input type="text" class="form-control" id="inputEmail3" placeholder="Address 2" />
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">City</label>
-                            <div class="col-sm-6">
-                              <input type="text" class="form-control" id="inputEmail3" placeholder="City" />
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Zip</label>
-                            <div class="col-sm-6">
-                              <input type="text" class="form-control" id="inputEmail3" placeholder="Zip" />
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Previous Balance</label>
-                            <div class="col-sm-6">
-                              <input type="text" class="form-control" id="inputEmail3" placeholder="Previous Balance" />
-                            </div>
-                          </div>
-                        </div>
+                      </div>
+                      </div>
+                   
+                     
+            
+                  
+                      <div class="col-md-3">
+                        <select class="form-control select2">
+                          <option selected="selected">Walk-in-Customer</option>
+                          <option>Alaska</option>
+                          <option>California</option>
+                          <option>Delaware</option>
+                          <option>Tennessee</option>
+                          <option>Texas</option>
+                          <option>Washington</option>
+                        </select>
                       </div>
                     </div>
-                    <!-- /.card-body -->
-                    <div class="card-footer">
-                      <button type="submit" class="btn btn-success float-right">Save</button>
+                    <div class="mt-5" style="display: flex;">
+                      <button type="button" class="btn-info" style="margin-right: 10px;width: 120px;">Filter</button>
+                      <button type="button" class="btn-info" style="margin-right: 10px;width: 120px;">Reset</button>
+               
                     </div>
-                    <!-- /.card-footer -->
-                  </form>
+                  </div>
+                  <!-- /.card-body -->
                 </div>
-
-                <!-- general form elements -->
-
                 <!-- /.card -->
 
-                <!-- general form elements -->
-
-                <!-- /.card -->
-
-                <!-- Input addon -->
-
-                <!-- /.card -->
-                <!-- Horizontal Form -->
-
+           
                 <!-- /.card -->
               </div>
-              <!--/.col (left) -->
-              <!-- right column -->
+              <!-- /.col -->
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Products</h3>
+                  </div>
+            
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <table id="example2" class="table table-bordered table-hover">
+                      <thead>
+                        <tr>
+                          <th>SL</th>
+                          <th>Image</th>
+                          <th>Code</th>
+                          <th>Name</th>
+                          <th>Category</th>
+                          <th>Brand</th>
+                          <th>Price</th>
+                          <th>Cost</th>
+                          <th>#</th>
+                       
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Napa</td>
+                          <td>Fever</td>
+                          <td>Medicine</td>
+                          <td>Novo</td>
+                          <td>7</td>
+                          <td>18.00</td>
+                     
+                          <td>Image</td>
+                       
+                          <td class="text-center">
+                            <button class="btn btn-brown btn-sm" onclick="productView(12)">
+                              <i class="fa fa-eye"></i>
+                            </button>
+                            <div class="btn-group">
+                              <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-cogs"></i>
+                              </button>
+                              <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; top: 30px; left: 0px; will-change: top, left;">
+                                
+                                <a class="dropdown-item" href="https://pos.softghor.com/back/product/12/edit">
+                                  <i class="fa fa-edit"></i>
+                                  Edit
+                                </a>
+            
+                                <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/12">
+                                  <i class="fa fa-history"></i>
+                                  Sell History
+                                </a>
+                                
+                                <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/12">
+                                  <i class="fa fa-trash"></i>
+                                  Delete
+                                </a>
+                              </div>
+                            </div>
+                            <button class="btn btn-light btn-sm generated_barcode" data-value="12544" data-price="20000.00">
+                                <i class="fa fa-barcode"></i>
+                            </button>
+            
+                            <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_12"><i class="fa fa-qrcode"></i></button>
+                            <div class="modal fade" id="qr_code_12" role="modal" aria-modal="true">
+                              <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                  <div class="modal-body">
+                                    <div class="text-center p-4" id="qrcode">
+                                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAg5JREFUeJzt3E1uqzAUBlBLWUCXlK2xVJbxBlWoaCD1f8hrBgXON7OvOZjZlS0RpmbG8MjHz+wtHWb5DDwej8fj8Xi8nlfObvBuochH6S3DW1TNwuPxeDwej7dnr9KRZV6/Om7zou3yeDwej8fjndKbirzF+7fsk8fj8Xg8Ho/3+/7vwuPxeDwej3dmb5mavWuzWvOyRE+s1dkb0moWHo/H4/F4vL16jURepfuq5wWvzvN4PB6Px+Md32vwLe9p4vO1d4TH4/F4PB7vj3llj1TpoGbvOn2fh126ww1edr7G4/F4PB6Pd2ovy+JFw+IELcq16y2LeTwej8fj8Y7gTflc7wYwW3xJZz7XdyQ9XHJhGW8o+hgej8fj8Xi8o3jpuLKkkyfeeN9bZbshtPq/rMrj8Xg8Ho93FG/N0G23lrdFh13J/x6iV1Y6vLk6FdeZ2eLWeR2Px+PxeDzeXr0oG71+Nntj9XEej8fj8Xi8HXhTM2Ozup6WTcX14wYv29B6+hZ+qjwej8fj8Xin9K73RTVvfSLK8xaRx+PxeDwe72BedCG4Dsfwi/7qZS979vExPB6Px+PxeIfzGsmqb/FCul0ej8fj8Xi8U3lzhv/xGsPFK8Lj8Xg8Ho93WK+SofJziOWJLJkXwuOCcc14n+XxeDwej8c7gtdI5PX7q2j4glfZ7pB+TODxeDwej8fbofcFHsIjlg8FV4MAAAAASUVORK5CYII=" alt="QR CODE" data-pagespeed-url-hash="259401253" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                                      <i class="fa fa-print"></i>
+                                      Print
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+            
+                          </td>
+                       
+                          
+                      
+                        </tr>
+                     
+                      
+                    
+                    
+                      </tbody>
+                  
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
 
-              <!--/.col (right) -->
+           
+                <!-- /.card -->
+              </div>
+              <!-- /.col -->
             </div>
             <!-- /.row -->
           </div>
@@ -1249,7 +1280,8 @@
       <!-- /.content-wrapper -->
       <footer class="main-footer">
         <div class="float-right d-none d-sm-block"><b>Version</b> 3.2.0</div>
-        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+        All rights reserved.
       </footer>
 
       <!-- Control Sidebar -->
@@ -1260,12 +1292,12 @@
     </div>
     <!-- ./wrapper -->
 
-    <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Select2 -->
     <script src="plugins/select2/js/select2.full.min.js"></script>
+    <script src="../plugins/toastr/toastr.min.js"></script>
     <!-- Bootstrap4 Duallistbox -->
     <script src="plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
     <!-- InputMask -->
@@ -1424,5 +1456,161 @@
       };
       // DropzoneJS Demo Code End
     </script>
+  <script>
+    $(function () {
+      var Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+      });
+
+      $(".swalDefaultSuccess").click(function () {
+        Toast.fire({
+          icon: "success",
+          title: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".swalDefaultInfo").click(function () {
+        Toast.fire({
+          icon: "info",
+          title: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".swalDefaultError").click(function () {
+        Toast.fire({
+          icon: "error",
+          title: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".swalDefaultWarning").click(function () {
+        Toast.fire({
+          icon: "warning",
+          title: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".swalDefaultQuestion").click(function () {
+        Toast.fire({
+          icon: "question",
+          title: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+
+      $(".toastrDefaultSuccess").click(function () {
+        toastr.success("Lorem ipsum dolor sit amet, consetetur sadipscing elitr.");
+      });
+      $(".toastrDefaultInfo").click(function () {
+        toastr.info("Lorem ipsum dolor sit amet, consetetur sadipscing elitr.");
+      });
+      $(".toastrDefaultError").click(function () {
+        toastr.error("Lorem ipsum dolor sit amet, consetetur sadipscing elitr.");
+      });
+      $(".toastrDefaultWarning").click(function () {
+        toastr.warning("Lorem ipsum dolor sit amet, consetetur sadipscing elitr.");
+      });
+
+      $(".toastsDefaultDefault").click(function () {
+        $(document).Toasts("create", {
+          title: "Toast Title",
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".toastsDefaultTopLeft").click(function () {
+        $(document).Toasts("create", {
+          title: "Toast Title",
+          position: "topLeft",
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".toastsDefaultBottomRight").click(function () {
+        $(document).Toasts("create", {
+          title: "Toast Title",
+          position: "bottomRight",
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".toastsDefaultBottomLeft").click(function () {
+        $(document).Toasts("create", {
+          title: "Toast Title",
+          position: "bottomLeft",
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".toastsDefaultAutohide").click(function () {
+        $(document).Toasts("create", {
+          title: "Toast Title",
+          autohide: true,
+          delay: 750,
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".toastsDefaultNotFixed").click(function () {
+        $(document).Toasts("create", {
+          title: "Toast Title",
+          fixed: false,
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".toastsDefaultFull").click(function () {
+        $(document).Toasts("create", {
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+          title: "Toast Title",
+          subtitle: "Subtitle",
+          icon: "fas fa-envelope fa-lg",
+        });
+      });
+      $(".toastsDefaultFullImage").click(function () {
+        $(document).Toasts("create", {
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+          title: "Toast Title",
+          subtitle: "Subtitle",
+          image: "../../dist/img/user3-128x128.jpg",
+          imageAlt: "User Picture",
+        });
+      });
+      $(".toastsDefaultSuccess").click(function () {
+        $(document).Toasts("create", {
+          class: "bg-success",
+          title: "Toast Title",
+          subtitle: "Subtitle",
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".toastsDefaultInfo").click(function () {
+        $(document).Toasts("create", {
+          class: "bg-info",
+          title: "Toast Title",
+          subtitle: "Subtitle",
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".toastsDefaultWarning").click(function () {
+        $(document).Toasts("create", {
+          class: "bg-warning",
+          title: "Toast Title",
+          subtitle: "Subtitle",
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".toastsDefaultDanger").click(function () {
+        $(document).Toasts("create", {
+          class: "bg-danger",
+          title: "Toast Title",
+          subtitle: "Subtitle",
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+      $(".toastsDefaultMaroon").click(function () {
+        $(document).Toasts("create", {
+          class: "bg-maroon",
+          title: "Toast Title",
+          subtitle: "Subtitle",
+          body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+        });
+      });
+    });
+  </script>
+
+   
   </body>
 </html>
